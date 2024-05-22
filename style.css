@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure html and body take up full height of viewport */
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    background-color: azure;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* nav */
+
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    background-color: aqua;
+    width: 100%;
+    padding: 30px;
+}
+.nav h1{
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 50px;
+}
+.nav img {
+    width: 10%;
+    max-width: 100px;
+    padding: 0px 30px;
+}
+
+/* main */
+.main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+/* workouts */
+.workouts{
+    display: grid;
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 20px;
+}
+.workouts h3, button{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.workouts button{
+    cursor: pointer;
+}
+
+/* add workout box */
+.add{
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.add img{
+    width: 20%;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+}
+.add img:hover{
+    cursor: pointer;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* footer */
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 100%;
+}
+
+.end h3 {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 30px;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Library</title>
+    <link rel="icon" href="./dumbell_11902962.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="nav">
+            <img src="./dumbell_11902962.png" alt="">
+            <h1>My Gym Library</h1>
+        </header>
+        
+        <main class="main" id="main">
+            <!-- Gym Workouts Display -->
+          
+            <!-- Add Workout Form Modal -->
+            <div id="add-workout-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="add-workout-form">
+                        <input type="text" id="workout-title" placeholder="Workout Title" required>
+                        <input type="number" id="workout-reps" placeholder="Reps" required>
+                        <input type="number" id="workout-sets" placeholder="Sets" required>
+                        <label for="workout-done">Done: </label>
+                        <input type="text" id="workout-done" placeholder="Yes or No" required>
+                        <button type="submit" id="submit">Add Workout</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Button to open add workout modal -->
+            <div class="add">
+                <h3>Click the dumbells to add a Workout!</h3>
+                <img id="add-workout-button" src="./dumbell_11902962.png" alt="">
+            </div>
+        </main>
+        
+        <footer class="end">
+            <h3>Reserved by GymHeads</h3>
+        </footer>  
+        <script src="./app.js"></script>  
+</body>
+</html>
+
